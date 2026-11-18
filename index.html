@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Liminal Flood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#home">liminal <span>flood info</span></a>
+    <nav aria-label="Основная навигация">
+      <a href="#about">О флуде</a>
+      <a href="#rules">Правила</a>
+      <a href="#roles">Роли</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="location-label">ОБЩЕЕ ПРОСТРАНСТВО</div>
+      <h1>ПРИВЕТСВУЕМ</h1>
+      <p class="hero-copy">Liminal Flood — флуд по всем фд а это наше web info для ознакомления</p>
+      <a class="main-link" href="#about">Заглянуть внутрь <span aria-hidden="true">↓</span></a>
+      <div class="hero-note">Тихое место. Разные интересы. Общий чат.</div>
+    </section>
+
+    <section class="content-section about-section" id="about">
+      <div class="section-label"><span>01</span> О ФЛУДЕ</div>
+      <div class="about-layout">
+        <div>
+          <h2>Что вас тут ждет</h2>
+          <p>Liminal Flood — это место впервую очередь для общения мы стараемся поддерживать дружелюбную атмосферу в чате также можно поиграть в игры вместе с чатом та же мафия или слова</p>
+          <p>Помимо чата у нас есть интересные интерактивы необычные решения ипрочие приколы</p>
+        </div>
+        <aside class="notice-card">
+          <span class="notice-heading">ЗАМЕТКА ДЛЯ ПОСЕТИТЕЛЯ</span>
+          <p>Атмосфера сайта вдохновлена Backrooms и лиминальными пространствами. Сам флуд — про людей, фандомы и обычное общение.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="content-section rules-section" id="rules">
+      <div class="section-label"><span>02</span> ПЕРЕД ВХОДОМ</div>
+      <div class="rules-layout">
+        <div class="rules-intro">
+          <h2>Всего несколько правил.</h2>
+          <p>Ничего сложного — просто уважай других участников и помогай сохранять нормальную атмосферу в чате.</p>
+        </div>
+        <ol class="rules-list">
+          <li><span>01</span><p>Уважай участников и их интересы, даже если ваши вкусы не совпадают.</p></li>
+          <li><span>02</span><p>Не переходи на личности, не трави людей и не разгоняй конфликты.</p></li>
+          <li><span>03</span><p>Не спамь и не забивай общий чат одинаковыми сообщениями.</p></li>
+          <li><span>04</span><p>Уважай личные границы. Если человек просит остановиться, не продолжай.</p></li>
+          <li><span>05</span><p>Если возникла проблема, спокойно обратись к администрации.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="content-section roles-section" id="roles">
+      <div class="section-label"><span>03</span> СПИСОК РОЛЕЙ</div>
+      <div class="roles-heading">
+        <div>
+          <h2>Персонажи и их владельцы.</h2>
+          <p>Здесь можно посмотреть, какие роли заняты. Если у персонажа не указан юзернейм, роль считается свободной.</p>
+        </div>
+        <div class="role-count"><span id="role-count">0</span><span>ролей</span></div>
+      </div>
+
+      <div class="role-tools">
+        <label class="search-label" for="role-search">Поиск</label>
+        <input id="role-search" type="search" placeholder="Имя персонажа, фандом или @username" autocomplete="off">
+        <label class="filter-label" for="role-filter">Показать</label>
+        <select id="role-filter">
+          <option value="all">Все роли</option>
+          <option value="free">Свободные</option>
+          <option value="taken">Занятые</option>
+        </select>
+      </div>
+
+      <div class="roles-list" id="roles-list" aria-live="polite"></div>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#home">liminal <span>flood</span></a>
+      <p>Флуд по всем фандомам. Заходи и располагайся.</p>
+      <a class="back-to-top" href="#home">Наверх ↑</a>
+    </footer>
+  </main>
+
+  <script src="roles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
